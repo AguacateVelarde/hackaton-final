@@ -1,0 +1,39 @@
+<ion-view align-title="left">
+  <ion-nav-title>
+    <span style="font-family: logo">Avocado-Help!</span>
+  </ion-nav-title>
+    <ion-content>
+      <br><br>
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1 class="logo">Avocado-Help!</h1>
+            </div>
+        </div>
+        <div class="list padding">
+        <div ng-show="!response">
+        <form ng-submit="submit()">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Usuario</span>
+            <input type="text" name="username" placeholder="Agrega tu usuario" ng-model="data.username">
+          </label>
+          <label class="item item-input item-stacked-label">
+              <span class="input-label">Contraseña</span>
+              <input type="password" name="username" placeholder="Contraseña" ng-model="data.password">
+          </label>
+            <input class="button button-block button-positive" type="submit" name="submit" value="Login">
+          </form>
+          <a href="#/app/registro">
+            <button class="button button-block button-assertive">Registrarse</button>
+          </a>
+        </div>
+        <div class="item card-item text-center" ng-show="response">
+          <div class="hero  flat">
+              <div class="content">
+            <h1 class="logo" style="font-size: 20px;">Se ha logueado correctamente!</h1>
+          </div>
+        </div>
+        </div>
+            <br><br>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,14 @@
+<ion-view view-title="Colaboradores">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="content has-header">
+            <div class="list animate-fade-slide-in-right" ng-repeat="item in seguidores">
+                <a href="#/app/colaboradores" class="item item-avatar item-icon-right">
+                    <img src={{ item.img }}>
+                    <h2>{{ item.name }}</h2>
+                    <p>{{ item.description }}</p>
+                    <i class="icon ion-chatbubble muted"></i>
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

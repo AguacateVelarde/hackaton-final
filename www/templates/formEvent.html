@@ -1,0 +1,54 @@
+<ion-view  view-title="Registro" >
+ <ion-content class="padding">
+   <div class="text-center">
+     <h2>Registro de evento</h2>
+   </div>
+
+   <div class="list">
+  	<form (ngSubmit)="logForm()">
+       <label class="item item-input item-text">
+    		<spam class="input-label">Nombre del evento</spam>
+    		<input type="text" placehover="Agrega el nombre">
+      </label>
+       <label class="item item-input item-text">
+      		<spam class="input-label">Descripción del evento</spam>
+      		<input type="text" placehover="">
+        </label>
+        <label class="item item-input">
+      		<spam class="input-label">Fecha</spam>
+      		<input type="date">
+        </label>
+         <label class="item item-input item-text">
+        		<spam class="input-label">Hora de inicio</spam>
+        		<ion-input type="text">
+        </label>
+        <label class="item item-input item-text">
+      		<spam>Hora de Fin</spam>
+      		<ion-input type="text">
+        </label>
+         <label class="item item-input item-select">
+        		<spam>Ciudad</spam>
+        		<select type="text">
+        			<option value="Puebla">Puebla</option>
+              <option value="Tlaxcala">Tlaxcala</option>
+        		</select>
+        </label>
+        <label class="item item-input item-select">
+        		<spam>Razon social</spam>
+        		<select type="text">
+        			<option value="Ambiente">Ambiente</option>
+        			<option value="Animales">Animales</option>
+        			<option value="Limpieza-comunitaria">Limpieza communitaria</option>
+        			<option value="Viveres">Viveres</option>
+        			<option value="Damnificados">Damnificados</option>
+        			<option value="Comunidades">Comunidades</option>
+        			<option value="Tercera-edad">Tercera edad</option>
+        		</select>
+        </label>
+		<input type="submit" class="button button-block button-royal" value="Crear evento">
+	</form>
+</div>
+
+
+ </ion-content>
+ </ion-view>

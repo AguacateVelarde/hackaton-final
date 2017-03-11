@@ -1,0 +1,16 @@
+{
+  "name": "sample",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.0-rc.2",
+    "ionic-material": "0.4.2",
+    "ion-md-input": "1.0.4",
+    "ngCordova": "^0.1.27-alpha"
+  },
+  "dependencies": {
+    "angular-simple-logger": "^0.1.7",
+    "lodash": "^4.17.4",
+    "google-maps-utility-library-v3-infobox": "^1.1.14",
+    "google-maps-utility-library-v3-keydragzoom": "^2.0.9"
+  }
+}

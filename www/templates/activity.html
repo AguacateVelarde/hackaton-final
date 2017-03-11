@@ -1,0 +1,28 @@
+<ion-view view-title="Eventos">
+    <ion-content ng-class="{expanded:isExpanded}" >
+      <div class="row">
+        <div class="col text-center">
+          <div style=" width: 300px; height: 300px; background-image:url(http://www.destination360.com/north-america/mexico/puebla/best-western-real-de-puebla-map.gif);">
+              
+          </div>
+        </div>
+      </div>
+        <div class="item card-item"  ng-repeat="item in testDatabase">
+            <div ui-sref="app.description({ id : item.id })" class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" style="background-image: url({{ item.image }});"></span>
+                    <strong>{{ item.name }}</strong> {{ item.description }}
+                    <div class="card-footer text-right">
+                        <i class="icon ion-chatbubbles positive"></i> 6
+                        <i class="icon ion-heart assertive"></i> 23
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> {{ item.date }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

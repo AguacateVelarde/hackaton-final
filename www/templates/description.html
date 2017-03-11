@@ -1,0 +1,22 @@
+<ion-view view-title="Eventos">
+    <ion-content ng-class="{expanded:isExpanded}"  class="animate-fade-slide-in">
+       <div class="item card-item" ng-repeat="item in testDatabase">
+            <div ui-sref="app.gallery" class="card stable-bg ink ink-dark">
+                <div class="item item-avatar item-text-wrap">
+                    <span class="avatar" style="background-image: url({{ item.image }});"></span>
+                    <strong>{{ item.name }}</strong> {{ item.description }}
+                    <div class="card-footer text-right">
+                        <i class="icon ion-chatbubbles positive"></i> 6
+                        <i class="icon ion-heart assertive"></i> 23
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> {{ item.date }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </ion-content>
+</ion-view>
